@@ -21,3 +21,57 @@
         transform: rotate(0deg) translate(-15px, 15px);
     }
 }
+
+.first-cloud-animation {
+    animation: first-cloud-animation ease-in-out 3s infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes first-cloud-animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-3px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.second-cloud-animation {
+    animation: second-cloud-animation ease-in 3s infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes second-cloud-animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.wave-animation {
+    animation: wave-animation ease-in-out 3s infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, 5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

@@ -1,5 +1,7 @@
+@import 'headerComponent.css';
+@import 'animations.css';
+@import "heroComponent.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import 'animations.css';

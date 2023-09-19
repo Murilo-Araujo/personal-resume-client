@@ -1,0 +1,24 @@
+.underline-header {
+    display: block;
+    position: relative;
+    padding: 0.1em 0;
+}
+
+.underline-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.underline-header:hover::after,
+.underline-header:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+
