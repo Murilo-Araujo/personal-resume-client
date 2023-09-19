@@ -1,0 +1,23 @@
+.astronaut-animation {
+    animation: astronaut-animation linear 3s infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes astronaut-animation {
+    0% {
+        transform: rotate(0deg) translate(-15px, 15px);
+    }
+    25% {
+        transform: rotate(-15deg) translate(-30px, 0px);
+    }
+    50% {
+        transform: rotate(-20deg) translate(-50px, 15px);
+    }
+    75% {
+        transform: rotate(-15deg) translate(-55px, -5px);
+    }
+    100% {
+        transform: rotate(0deg) translate(-15px, 15px);
+    }
+}
