@@ -1,0 +1,26 @@
+.bubble {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: white;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 10px #4fc3dc44, 0 0 25px #4fc3dc,
+    0 0 50px #4fc3dc;
+    animation: bubble 3s linear infinite;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

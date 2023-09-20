@@ -1,6 +1,7 @@
 @import 'headerComponent.css';
 @import 'animations.css';
 @import "heroComponent.css";
+@import "bubbleComponent.css";
 
 @tailwind base;
 @tailwind components;

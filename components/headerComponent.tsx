@@ -1,6 +1,6 @@
 function HeaderComponent(){
     return (
-        <div className="fixed backdrop-blur-sm h-24 w-full z-50">
+        <div className="fixed backdrop-blur-sm h-16 w-full z-50">
             <div className="flex justify-between items-center h-full w-full">
                 <span className="ml-1 md:ml-16 text-white font-bold text-sm md:text-2xl">Murilo Marçal</span>
                 <div className="flex items-center justify-end mr-1 md:mr-12 ">
