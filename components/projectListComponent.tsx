@@ -11,7 +11,7 @@ export default function projectListComponent({projects}: ProjectListComponentPro
         <div className="flex space-x-5 space-y-4">
             {projects.map((project: any) => (
 
-                <ProjectItemComponent project={project}/>
+                <ProjectItemComponent key={project.id} project={project}/>
             ))}
         </div>
     )
