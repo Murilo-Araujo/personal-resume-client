@@ -1,8 +1,8 @@
 {
   "headerComponent": {
-    "HOME": "Página Inicial",
-    "ABOUT": "Sobre",
-    "CONTACT": "Contato",
-    "PROJECTS": "Projetos"
+    "home": "Página Inicial",
+    "about": "Sobre",
+    "contact": "Contato",
+    "projects": "Projetos"
   }
 }

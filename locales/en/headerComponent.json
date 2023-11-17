@@ -1,8 +1,8 @@
 {
   "headerComponent": {
-    "HOME": "Home",
-    "ABOUT": "About",
-    "CONTACT": "Contact",
-    "PROJECTS": "Projects"
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects"
   }
 }

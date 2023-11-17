@@ -1,13 +1,16 @@
+import {useTranslation} from "react-i18next";
+
 function HeroComponent() {
+    const {t} = useTranslation('heroComponent')
     return (
         // colocando um css para que quando a imagem ultrapassar a direita, ela não apareça
         <div className='h-screen bg-black w-full relative overflow-hidden'>
             <div className="w-full h-full flex justify-center items-center absolute">
                 <div className="md:mb-24 md:ml-16 -space-y-6">
                     {/*eslint-disable-next-line react/no-unescaped-entities */}
-                    <div className="text-white z-50 text-[25px] md:text-[60px]">HELLO THERE, I'M</div>
-                    <div className="text-white z-50 text-[40px] md:text-[90px] font-extrabold">MURILO MARÇAL</div>
-                    <div className="text-white z-50 text-[25px] md:text-[60px]">A FULLSTACK DEVELOPER</div>
+                    <div className="text-white z-50 text-[25px] md:text-[60px]">{t('title')}</div>
+                    <div className="text-white z-50 text-[40px] md:text-[90px] font-extrabold">{t('name')}</div>
+                    <div className="text-white z-50 text-[25px] md:text-[60px]">{t('subtitle')}</div>
                 </div>
             </div>
 
