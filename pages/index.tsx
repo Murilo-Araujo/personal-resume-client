@@ -23,10 +23,14 @@ export const getStaticProps = async () => {
         await fetch('https://api.github.com/users/murilo-araujo/repos',
             {
                 headers: {
-                    Authorization: `token ${process.env.GITHUB_TOKEN}`
+                    Authorization: `token ${process.env.GITHUB_PUBLIC_REPOS_KEY }`
                 }
             })
+
     const projects = await res.json()
+
+    console.log(projects)
+
 
     return {
         props: {projects: projects},
