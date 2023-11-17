@@ -4,7 +4,7 @@ import {useTranslation} from "react-i18next";
 
 
 function HeaderComponent(){
-    const { t } = useTranslation('header');
+    const { t } = useTranslation('headerComponent');
 
     return (
         <div className="fixed backdrop-blur-sm h-16 w-full z-50">
