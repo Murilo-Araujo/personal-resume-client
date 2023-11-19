@@ -1,5 +1,4 @@
 import {Inter} from 'next/font/google'
-import Axios from 'axios'
 import HeroComponent from '@/components/heroComponent'
 import SummaryComponent from "@/components/summaryComponent";
 import ProjectsComponent from "@/components/projectsComponent";
@@ -28,9 +27,6 @@ export const getStaticProps = async () => {
             })
 
     const projects = await res.json()
-
-    console.log(projects)
-
 
     return {
         props: {projects: projects},
