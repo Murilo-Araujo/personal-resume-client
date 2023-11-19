@@ -1,6 +1,10 @@
 import BubbleComponent from "@/components/bubbleComponent";
+import {useTranslation} from "react-i18next";
+import {useRouter} from "next/router";
 
 function SummaryComponent() {
+
+    const {t} = useTranslation('summaryComponent');
     return (
         <div className="relative bg-black w-full h-full ">
             <div className="absolute top-0 w-full h-full">
@@ -13,12 +17,9 @@ function SummaryComponent() {
 
                 <div className="bg-primary w-full h-full z-30">
                     <div
-                        className='w-full h-full space-y-12 justify-center items-center text-3xl md:text-6xl text-justify text-white p-6 md:p-32 font-bold'>
-                        <p> To consolidate my career in the Software Engineering field and to develop professionally by
-                            working on challenging projects that add value to the company.</p>
-                        <p> My focus is to improve my programming skills, acquire new knowledge in emerging technologies
-                            and agile development methodologies, with the aim of delivering efficient and quality
-                            solutions.</p>
+                        className='w-full h-full space-y-12 justify-center items-center text-3xl md:text-6xl text-justify text-white p-6 md:p-32 relative font-bold z-30'>
+                        <p data-aos="fade-right"> {t('paragraph')}</p>
+                        <p data-aos="fade-left"> {t('secondParagraph')}</p>
                     </div>
                 </div>
                 <div className="relative">
