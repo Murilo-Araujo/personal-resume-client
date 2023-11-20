@@ -10,7 +10,7 @@ interface ProjectItemComponentProps {
 
 export default function ProjectItemComponent({project}: ProjectItemComponentProps) {
     return (
-        <div className="max-w-sm p-6 backdrop-blur-sm rounded-lg shadow border border-white backdrop-invert w-96">
+        <div className="max-w-sm p-6 rounded-lg shadow border border-white w-96">
             <StarIcon className={"w-7 h-7 text-yellow-400 mb-3"}/>
             <a href={`/project/${project.id}`}>
                 <h5 className="mb-2 text-2xl font-semibold tracking-tight text-white">{project.name}</h5>

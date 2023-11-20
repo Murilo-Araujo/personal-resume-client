@@ -7,10 +7,13 @@ interface ChangeLocaleComponentProps {
 
 const ChangeLocaleComponent = (props: ChangeLocaleComponentProps) => {
     const router = useRouter();
+    // new path with locale as first segment
+    let path = router.asPath;
+    path = path.replace('/', `/${router.locale === 'en' ? 'pt-BR' : 'en'}/`);
 
     return (
-        <Link href={router.locale === 'en' ? '/pt-BR' : '/en'} locale={false} className={`text-white text-xl font-semibold hover:text-gray-400 ${props.className}`}>
-            <p className="text-white text-xl font-semibold hover:text-gray-400">{router.locale === 'en' ? 'PT' : 'EN'}</p>
+        <Link href={path} locale={false} className={`text-white text-xl font-semibold hover:text-gray-400 ${props.className}`}>
+            <p className="text-white text-xs md:text-xl font-bold underline-header">{router.locale === 'en' ? 'PT' : 'EN'}</p>
         </Link>
     )
 }

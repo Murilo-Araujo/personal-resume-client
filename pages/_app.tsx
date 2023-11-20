@@ -4,18 +4,27 @@ import HeaderComponent from "@/components/headerComponent";
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {useRouter} from "next/router";
+import {useEffect} from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function App({Component, pageProps}: AppProps) {
 
     const locale = useRouter().locale;
 
-    i18n
-        .use(initReactI18next)
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+
+    }, [locale]);
+
+    i18n.use(initReactI18next)
         .init({
-            resources: loadLocales(),
             lng: locale,
             fallbackLng: 'en',
+            resources: loadLocales(),
             interpolation: {
                 escapeValue: false,
             },
@@ -51,6 +60,7 @@ function loadLocales() {
             ...locales[folder],
             ...json,
         }
+
     });
 
     return locales;

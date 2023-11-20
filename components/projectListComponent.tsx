@@ -1,18 +1,21 @@
 import ProjectItemComponent from "@/components/projectItemComponent";
+import {Carousel} from 'react-responsive-carousel';
 
 interface ProjectListComponentProps {
     projects: any
 }
 
 export default function projectListComponent({projects}: ProjectListComponentProps) {
-    console.log(projects)
+
 
     return (
-        <div className="flex space-x-5 space-y-4">
-            {projects.map((project: any) => (
+        <div
+            className="flex grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10 mb-10 w-3/4 h-full justify-center items-center relative z-50 overflow-x-auto ">
 
+            {projects.map((project: any) => (
                 <ProjectItemComponent key={project.id} project={project}/>
             ))}
+
         </div>
     )
 }
