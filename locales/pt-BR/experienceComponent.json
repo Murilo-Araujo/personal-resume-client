@@ -1,0 +1,24 @@
+{
+  "experienceComponent": {
+    "title": "Experiências",
+    "experiences": [
+      {
+        "company": "Codengage",
+        "role": "Desenvolvedor Full Stack",
+        "startDate": "2022-09-01",
+        "description": "Durante esse período, contribuí ativamente para o desenvolvimento de soluções inovadoras em projetos desafiadores. Trabalhando em equipe, segui as melhores práticas de programação, aprimorando não apenas minhas habilidades técnicas, mas também a capacidade de comunicação e colaboração eficaz. Esta experiência proporcionou-me não apenas a oportunidade de aprender novas tecnologias e metodologias, mas também de compartilhar esse conhecimento.",
+        "technologies": [
+          "Ruby",
+          "Ruby on Rails",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Git",
+          "GitHub",
+          "Code review"
+        ]
+      }
+    ]
+  }
+}

@@ -1,3 +1,12 @@
 {
-
+  "shared": {
+    "present": "present",
+    "and": "and",
+    "year": "year",
+    "years": "years",
+    "month": "month",
+    "months": "months",
+    "day": "day",
+    "days": "days"
+  }
 }

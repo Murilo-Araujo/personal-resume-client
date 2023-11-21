@@ -1,3 +1,14 @@
 {
-
+  "shared": {
+    "present": "presente",
+    "and": "e",
+    "year": "ano",
+    "years": "anos",
+    "month": "mês",
+    "months": "meses",
+    "week": "semana",
+    "weeks": "semanas",
+    "day": "dia",
+    "days": "dias"
+  }
 }

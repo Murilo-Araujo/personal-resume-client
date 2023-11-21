@@ -13,7 +13,7 @@ const ChangeLocaleComponent = (props: ChangeLocaleComponentProps) => {
 
     return (
         <Link href={path} locale={false} className={`text-white text-xl font-semibold hover:text-gray-400 ${props.className}`}>
-            <p className="text-white text-xs md:text-xl font-bold underline-header">{router.locale === 'en' ? 'PT' : 'EN'}</p>
+            <p className="text-white text-xs md:text-xl font-bold underline-header">{router.locale === 'en' ? 'EN' : 'PT' }</p>
         </Link>
     )
 }

@@ -16,6 +16,7 @@ export default function App({Component, pageProps}: AppProps) {
     useEffect(() => {
         AOS.init({
             duration: 1000,
+            once: true,
         });
 
     }, [locale]);
@@ -62,6 +63,8 @@ function loadLocales() {
         }
 
     });
+
+    console.log(locales)
 
     return locales;
 }

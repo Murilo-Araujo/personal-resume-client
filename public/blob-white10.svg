@@ -1,0 +1,14 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <g transform="translate(437.4221073183346 271.04751001584634)">
+        <path d="M70.7 52.9C54.8 68.3 -20.2 61.7 -41.9 42.9C-63.5 24.2 -31.8 -6.7 5.8 -3.3C43.3 0 86.6 37.5 70.7 52.9" fill="#F5F5F5">
+            <animateTransform
+                    attributeName="transform"
+                    type="translate"
+                    values="0 0; 0 -5; 0 0"
+                    keyTimes="0; 0.5; 1"
+                    dur="3s"
+                    repeatCount="indefinite"
+            />
+        </path>
+    </g>
+</svg>

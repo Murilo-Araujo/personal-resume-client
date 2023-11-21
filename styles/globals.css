@@ -2,6 +2,7 @@
 @import 'animations.css';
 @import "heroComponent.css";
 @import "bubbleComponent.css";
+@import "flip.css";
 
 @tailwind base;
 @tailwind components;
