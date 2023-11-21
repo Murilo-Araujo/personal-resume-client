@@ -63,7 +63,7 @@ export default function ExperienceComponent() {
                                 </p>
 
 
-                                <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-6 flex items-center'}
+                                <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-6 items-center flex flex-wrap'}
                                    data-aos="fade-right">
                                     {job.role} -
                                     {job.technologies && job.technologies.length > 0 &&
@@ -71,7 +71,7 @@ export default function ExperienceComponent() {
 
                                             // eslint-disable-next-line react/jsx-key
                                             <span
-                                                className={'px-3 py-1 text-xs text-white mx-1 rounded-full bg-primary/80 hover:bg-primary'}>
+                                                className={'px-3 py-1 text-xs text-white m-1 rounded-full bg-primary/80 hover:bg-primary flex'}>
                                                     {technology}
                                             </span>
                                         ))
