@@ -46,12 +46,12 @@ export default function ExperienceComponent() {
                 className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
                 <p className={'text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'}
                    data-aos="fade-left">{t('title')}
-                    <span className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5'}>
+                    <span className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 '}>
                        ({years} {years > 1 ? l('years') : l('year')} {l('and')} {months} {months > 1 ? l('months') : l('month')})
                     </span>
                 </p>
 
-                <div className={'flex flex-col mt-32 items-center'}>
+                <div className={'flex flex-col mt-16 lg:mt-32 items-center'}>
                     { experiences.map((job: Experience, index: number) => {
                         return (
                             <div key={index} className={'mt-10'}>

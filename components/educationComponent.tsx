@@ -87,7 +87,7 @@ export default function EducationComponent() {
 
 
 
-                            <p className={'text-lg md:text-2xl text-center z-30 w-full text-justify top-1/4 mt-32'} data-aos="fade-right">{t('description')}</p>
+                            <p className={'text-lg md:text-2xl text-center z-30 w-full text-justify top-1/4 mt-16 lg:mt-32'} data-aos="fade-right">{t('description')}</p>
 
 
 
