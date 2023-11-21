@@ -76,3 +76,22 @@
         transform: translate(0px, 0px);
     }
 }
+
+.-wave_animation {
+    animation: -wave_animation ease-in-out 3s infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes -wave_animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -15px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+

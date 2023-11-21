@@ -22,3 +22,8 @@
     transform: translate3d(0, 0.2em, 0);
 }
 
+.text-border-black {
+    /*apply filter invert(100%) on letters*/
+
+    color: #5fc58e
+}

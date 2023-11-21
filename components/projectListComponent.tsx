@@ -8,16 +8,17 @@ interface ProjectListComponentProps {
 export default function projectListComponent({projects}: ProjectListComponentProps) {
 
 
+
     return (
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-10 mb-10 w-3/4 h-full justify-center items-center relative z-30 overflow-x-auto ">
+        <div className={"w-full h-full relative bg-gray-200"}>
 
+            <div className="grid grid-cols-1 w-full h-full gap-6 pb-6 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center relative overflow-x-auto" data-aos={"fade-up"}>
 
-            {Array.isArray(projects) && projects.map((project: any) => (
-                <ProjectItemComponent key={project.id} project={project}/>
-            ))}
+                {Array.isArray(projects) && projects.map((project: any) => (
+                    <ProjectItemComponent key={project.id} project={project}/>
+                ))}
 
-
-
+            </div>
         </div>
     )
 }

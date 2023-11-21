@@ -2,6 +2,7 @@ import ProjectListComponent from "@/components/projectListComponent";
 import ProjectsComponent from "@/components/projectsComponent";
 import BubbleComponent from "@/components/bubbleComponent";
 import {FaGithubAlt} from "react-icons/fa";
+import Image from "next/image";
 
 interface ProjectsComponentProps {
     projects: any
@@ -37,16 +38,23 @@ function projectsComponent(props: ProjectsComponentProps) {
     return (
         <div className={"bg-black relative"}>
 
-            <FaGithubAlt className={"absolute flex justify-center w-full text-white lg:text-[37rem] md:text-[25rem] sm:text-[15rem] text-[10rem] lg:-top-60 md:-top-40 sm:-top-20 -top-10"}/>
+            <FaGithubAlt
+                className={"absolute flex justify-center w-full text-white lg:text-[37rem] md:text-[25rem] sm:text-[15rem] text-[10rem] lg:-top-60 md:-top-40 sm:-top-20 -top-10"}/>
 
             <img src={"/granulated.png"} className={"absolute z-20 w-full h-full"}/>
 
-            
-            <div className={"flex justify-center items-center relative overflow-x-auto min-h-screen lg:pt-96 flex-col"}>
+
+            <div
+                className={"flex justify-center items-center relative overflow-x-auto min-h-screen lg:pt-72 pb-32 flex-col"}>
                 <h1 className={"text-white text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5"}>Projects</h1>
                 <Bubbles/>
+                <img src={'/wave-middle.svg'} className={'w-full z-30 wave-animation relative -mb-[1px] text-white'}/>
+                <div className={"relative w-full h-full flex justify-center items-center z-30 flex-col wave-animation"}>
 
-                <ProjectListComponent projects={props.projects}/>
+                    <ProjectListComponent projects={props.projects}/>
+                </div>
+                <img src={'/wave-footer-middle.svg'}
+                     className={'w-full z-10 text-white relative -mt-0.5 wave-animation'}/>
             </div>
         </div>
     )

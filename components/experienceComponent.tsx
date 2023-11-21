@@ -41,7 +41,7 @@ export default function ExperienceComponent() {
 
 
     return (
-        <div className="bg-white w-full h-full pt-12 z-40 ">
+        <div className="bg-white w-full h-full z-40 ">
             <div
                 className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
                 <p className={'text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'}
@@ -57,7 +57,7 @@ export default function ExperienceComponent() {
                             <div key={index} className={'mt-10'}>
                                 <p className={'text-2xl md:text-3xl font-bold z-30 w-full top-1/4 lg:mt-5'}
                                    data-aos="fade-right">{job.company}
-                                    <span className={'text-xl ml-2 md:text-2xl text-gray-400 z-30 w-full top-1/4 lg:mt-5'}>
+                                    <span className={'text-xl ml-2 md:text-2xl text-gray-400 z-30 w-full top-1/4 lg:mt-5 flex flex-nowrap sm:block'}>
                                         ({format(parse(job.startDate, 'yyyy-MM-dd', new Date()), 'MMMM yyyy', {locale})} - {job.endDate ? format(parse(job.endDate, 'yyyy-MM-dd', new Date()), 'MMMM yyyy', {locale}) : l('present')})
                                     </span>
                                 </p>
