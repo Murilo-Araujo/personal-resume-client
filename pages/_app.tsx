@@ -64,7 +64,5 @@ function loadLocales() {
 
     });
 
-    console.log(locales)
-
     return locales;
 }
