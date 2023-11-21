@@ -15,6 +15,7 @@ export default function App({Component, pageProps}: AppProps) {
 
     useEffect(() => {
         AOS.init({
+            disable: 'mobile',
             duration: 1000,
             once: true,
         });
