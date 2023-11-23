@@ -33,7 +33,7 @@ function Bubbles() {
     )
 }
 
-function projectsComponent(props: ProjectsComponentProps) {
+function ProjectsComponent(props: ProjectsComponentProps) {
     const {t} = useTranslation('projectsComponent');
     return (
         <div className={"bg-black relative"}>
@@ -60,4 +60,4 @@ function projectsComponent(props: ProjectsComponentProps) {
     )
 }
 
-export default projectsComponent;
+export default ProjectsComponent;

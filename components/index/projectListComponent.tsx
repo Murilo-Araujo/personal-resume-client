@@ -5,7 +5,7 @@ interface ProjectListComponentProps {
     projects: any
 }
 
-export default function projectListComponent({projects}: ProjectListComponentProps) {
+export default function ProjectListComponent({projects}: ProjectListComponentProps) {
 
     return (
         <div className={"w-full h-full bg-gray-200"}>
