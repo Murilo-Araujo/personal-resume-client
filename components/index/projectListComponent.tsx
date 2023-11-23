@@ -1,4 +1,4 @@
-import ProjectItemComponent from "@/components/projectItemComponent";
+import ProjectItemComponent from "@/components/index/projectItemComponent";
 
 
 interface ProjectListComponentProps {
@@ -7,17 +7,14 @@ interface ProjectListComponentProps {
 
 export default function projectListComponent({projects}: ProjectListComponentProps) {
 
-
-
     return (
-        <div className={"w-full h-full relative bg-gray-200"}>
+        <div className={"w-full h-full bg-gray-200"}>
 
-            <div className="grid grid-cols-1 w-full h-full gap-6 pb-6 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center relative overflow-x-auto" data-aos={"fade-up"}>
+            <div className="flex w-full h-full pb-12 space-x-9 px-12 overflow-x-auto overflow-y-hidden" data-aos={"fade-up"}>
 
                 {Array.isArray(projects) && projects.map((project: any) => (
                     <ProjectItemComponent key={project.id} project={project}/>
                 ))}
-
             </div>
         </div>
     )

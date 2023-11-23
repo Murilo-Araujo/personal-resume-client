@@ -1,4 +1,4 @@
-import ChangeLocaleComponent from "@/components/changeLocaleComponent";
+import ChangeLocaleComponent from "@/components/index/changeLocaleComponent";
 import Link from "next/link";
 import {useTranslation} from "react-i18next";
 

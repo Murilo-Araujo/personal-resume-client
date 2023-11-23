@@ -1,8 +1,7 @@
-import ProjectListComponent from "@/components/projectListComponent";
-import ProjectsComponent from "@/components/projectsComponent";
-import BubbleComponent from "@/components/bubbleComponent";
+import ProjectListComponent from "@/components/index/projectListComponent";
+import {useTranslation} from "react-i18next";
+import BubbleComponent from "@/components/index/bubbleComponent";
 import {FaGithubAlt} from "react-icons/fa";
-import Image from "next/image";
 
 interface ProjectsComponentProps {
     projects: any
@@ -35,21 +34,22 @@ function Bubbles() {
 }
 
 function projectsComponent(props: ProjectsComponentProps) {
+    const {t} = useTranslation('projectsComponent');
     return (
         <div className={"bg-black relative"}>
 
             <FaGithubAlt
-                className={"absolute flex justify-center w-full text-white lg:text-[37rem] md:text-[25rem] sm:text-[15rem] text-[10rem] lg:-top-60 md:-top-40 sm:-top-20 -top-10"}/>
+                className={"absolute flex justify-center w-full text-white lg:text-[37rem] md:text-[25rem] sm:text-[20rem] text-[15rem] lg:-top-60 md:-top-40 sm:-top-24 -top-14"}/>
 
             <img src={"/granulated.png"} className={"absolute z-20 w-full h-full"}/>
 
 
             <div
-                className={"flex justify-center items-center relative overflow-x-auto min-h-screen lg:pt-72 pb-32 flex-col"}>
-                <h1 className={"text-white text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5"}>Projects</h1>
+                className={"flex justify-center items-center overflow-x-auto h-screen overflow-y-hidden lg:pt-96 pb-32 flex-col "}>
+                <h1 className={"text-white text-4xl md:text-6xl font-bold text-center z-30 w-full lg:mt-5"}>{t('title')}</h1>
                 <Bubbles/>
                 <img src={'/wave-middle.svg'} className={'w-full z-30 wave-animation relative -mb-[1px] text-white'}/>
-                <div className={"relative w-full h-full flex justify-center items-center z-30 flex-col wave-animation"}>
+                <div className={"relative w-full h-auto z-30 wave-animation"}>
 
                     <ProjectListComponent projects={props.projects}/>
                 </div>

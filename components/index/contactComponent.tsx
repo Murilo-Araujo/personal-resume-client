@@ -1,4 +1,4 @@
-import BubbleComponent from "@/components/bubbleComponent";
+import BubbleComponent from "@/components/index/bubbleComponent";
 import {useTranslation} from "react-i18next";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 

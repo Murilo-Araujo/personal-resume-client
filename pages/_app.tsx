@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
 import type {AppProps} from 'next/app'
-import HeaderComponent from "@/components/headerComponent";
+import HeaderComponent from "@/components/index/headerComponent";
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 import {useRouter} from "next/router";

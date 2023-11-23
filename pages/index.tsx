@@ -1,10 +1,10 @@
 import {Inter} from 'next/font/google'
-import HeroComponent from '@/components/heroComponent'
-import SummaryComponent from "@/components/summaryComponent";
-import ProjectsComponent from "@/components/projectsComponent";
-import ContactComponent from "@/components/contactComponent";
-import EducationComponent from "@/components/educationComponent";
-import ExperienceComponent from "@/components/experienceComponent";
+import HeroComponent from '@/components/index/heroComponent'
+import SummaryComponent from "@/components/index/summaryComponent";
+import ProjectsComponent from "@/components/index/projectsComponent";
+import ContactComponent from "@/components/index/contactComponent";
+import EducationComponent from "@/components/index/educationComponent";
+import ExperienceComponent from "@/components/index/experienceComponent";
 
 const inter = Inter({subsets: ['latin']})
 

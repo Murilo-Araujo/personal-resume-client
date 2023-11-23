@@ -1,6 +1,6 @@
 import {Html, Head, Main, NextScript} from 'next/document'
-import HeaderComponent from "@/components/headerComponent";
-import ChangeLocaleComponent from "@/components/changeLocaleComponent";
+import HeaderComponent from "@/components/index/headerComponent";
+import ChangeLocaleComponent from "@/components/index/changeLocaleComponent";
 
 export default function Document() {
 
