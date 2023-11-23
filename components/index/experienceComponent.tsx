@@ -12,6 +12,22 @@ type Experience = {
     description: string;
 };
 
+function Blobs() {
+    return (
+        <>
+            <img src='/blob-white5.svg' className='absolute top-[30%] right-[47%] w-1/5 z-10'/>
+            <img src='/blob-white7.svg' className='absolute top-[40%] left-[0%] w-1/5 z-10'/>
+            <img src='/blob-white8.svg' className='absolute top-[55%] left-[20%] w-1/5 z-10'/>
+            <img src='/blob-white9.svg' className='absolute top-[40%] right-[0%] w-1/5 z-10'/>
+            <img src='/blob-white10.svg' className='absolute top-[45%] left-[50%] w-1/5 z-10'/>
+            <img src='/blob-white11.svg' className='absolute top-[20%] left-[70%] w-1/5 z-10'/>
+            <img src='/blob-animated.svg' className='absolute top-[50%] right-[15%] w-[15%] z-10'/>
+            <img src='/blob-animated2.svg' className='absolute spin top-[70%] left-[45%] w-[10%] z-10'/>
+        </>
+
+    )
+}
+
 export default function ExperienceComponent() {
     const {t} = useTranslation('experienceComponent');
     const {t: l} = useTranslation('shared');
@@ -41,55 +57,69 @@ export default function ExperienceComponent() {
 
 
     return (
-        <div className="bg-white w-full h-full z-40 ">
-            <div
-                className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
-                <p className={'text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'}
-                   data-aos="fade-left">{t('title')}
-                    <span className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 '}>
+        <div className={'relative bg-black pb-6'}>
+            <div className="bg-white w-full h-full z-40 ">
+                <div
+                    className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
+                    <p className={'text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'}
+                       data-aos="fade-left">{t('title')}
+                        <span
+                            className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 '}>
                        ({years} {years > 1 ? l('years') : l('year')} {l('and')} {months} {months > 1 ? l('months') : l('month')})
                     </span>
-                </p>
+                    </p>
 
-                <div className={'flex flex-col mt-16 lg:mt-32 items-center'}>
-                    { experiences.map((job: Experience, index: number) => {
-                        return (
-                            <div key={index} className={'mt-10'}>
-                                <p className={'text-2xl md:text-3xl font-bold z-30 w-full top-1/4 lg:mt-5'}
-                                   data-aos="fade-right">{job.company}
-                                    <span className={'text-xl ml-2 md:text-2xl text-gray-400 z-30 w-full top-1/4 lg:mt-5 flex flex-nowrap sm:block'}>
+                    <div className={'flex flex-col mt-16 lg:mt-32 items-center'}>
+                        {experiences.map((job: Experience, index: number) => {
+                            return (
+                                <div key={index} className={'mt-10'}>
+                                    <p className={'text-2xl md:text-3xl font-bold z-30 w-full top-1/4 lg:mt-5'}
+                                       data-aos="fade-right">{job.company}
+                                        <span
+                                            className={'text-xl ml-2 md:text-2xl text-gray-400 z-30 w-full top-1/4 lg:mt-5 '}>
                                         ({format(parse(job.startDate, 'yyyy-MM-dd', new Date()), 'MMMM yyyy', {locale})} - {job.endDate ? format(parse(job.endDate, 'yyyy-MM-dd', new Date()), 'MMMM yyyy', {locale}) : l('present')})
                                     </span>
-                                </p>
+                                    </p>
 
 
-                                <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-6 items-center flex flex-wrap'}
-                                   data-aos="fade-right">
-                                    {job.role} -
-                                    {job.technologies && job.technologies.length > 0 &&
-                                        job.technologies.map((technology: string) => (
+                                    <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-6 items-center flex flex-wrap'}
+                                       data-aos="fade-right">
+                                        {job.role} -
+                                        {job.technologies && job.technologies.length > 0 &&
+                                            job.technologies.map((technology: string) => (
 
-                                            // eslint-disable-next-line react/jsx-key
-                                            <span
-                                                className={'px-3 py-1 text-xs text-white m-1 rounded-full bg-primary/80 hover:bg-primary flex'}>
+                                                // eslint-disable-next-line react/jsx-key
+                                                <span
+                                                    className={'px-3 py-1 text-xs text-white m-1 rounded-full bg-primary/80 hover:bg-primary flex'}>
                                                     {technology}
                                             </span>
-                                        ))
-                                    }
-                                </p>
+                                            ))
+                                        }
+                                    </p>
 
 
-                                <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-3'}
-                                   data-aos="fade-right">{job.description}</p>
+                                    <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-3'}
+                                       data-aos="fade-right">{job.description}</p>
 
-                            </div>
-                        )
-                    })}
+                                </div>
+                            )
+                        })}
+                    </div>
+
+
                 </div>
+
+            </div>
+            <div className={'bg-green-radial-gradient w-full relative h-auto top-0 pb-2 left-0 z-20'}>
+                <div className={'w-full h-full bg-[#1b1c1e]/50 absolute top-0 left-0 z-10'}/>
+                <Blobs/>
+                <img src={'/wave-white-footer.svg'}
+                     className={'w-full z-10 text-white absolute  bg-none'}/>
+                <img src={'/astronaut.png'}
+                     className={'z-10 text-white -ml-32 pt-24 wave-animation h-screen/2  bg-none'}/>
 
 
             </div>
-
         </div>
     )
 }

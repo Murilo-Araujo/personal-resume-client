@@ -3,6 +3,7 @@
 @import "heroComponent.css";
 @import "bubbleComponent.css";
 @import "flip.css";
+@import "background.css";
 
 @tailwind base;
 @tailwind components;
