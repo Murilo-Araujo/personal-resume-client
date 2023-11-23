@@ -36,7 +36,7 @@ function Bubbles() {
 function ProjectsComponent(props: ProjectsComponentProps) {
     const {t} = useTranslation('projectsComponent');
     return (
-        <div className={"bg-black relative"}>
+        <div className={"bg-black relative h-full"}>
 
             <FaGithubAlt
                 className={"absolute flex justify-center w-full text-white lg:text-[37rem] md:text-[25rem] sm:text-[20rem] text-[15rem] lg:-top-60 md:-top-40 sm:-top-24 -top-14"}/>
@@ -45,7 +45,7 @@ function ProjectsComponent(props: ProjectsComponentProps) {
 
 
             <div
-                className={"flex justify-center items-center overflow-x-auto h-screen overflow-y-hidden lg:pt-96 pb-32 flex-col "}>
+                className={"justify-center items-center overflow-x-auto h-auto lg:pt-96 py-64 flex-col "}>
                 <h1 className={"text-white text-4xl md:text-6xl font-bold text-center z-30 w-full lg:mt-5"}>{t('title')}</h1>
                 <Bubbles/>
                 <img src={'/wave-middle.svg'} className={'w-full z-30 wave-animation relative -mb-[1px] text-white'}/>
