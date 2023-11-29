@@ -58,13 +58,13 @@ export default function ExperienceComponent() {
 
     return (
         <div className={'relative bg-black pb-6'}>
-            <div className="bg-white w-full h-full z-40 ">
+            <div className="bg-white w-full h-full z-40 pt-32">
                 <div
                     className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
-                    <p className={'text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'}
-                       data-aos="fade-left">{t('title')}
+                    <p className={'text-4xl/[3.37rem] md:text-7xl font-bold text-center z-30 w-full top-1/4 lg:mt-5 font-murs-gothic leading-[5rem]'}
+                       data-aos="fade-left uppercase">{t('title')}
                         <span
-                            className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 '}>
+                            className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 font-vela-sans'}>
                        ({years} {years > 1 ? l('years') : l('year')} {l('and')} {months} {months > 1 ? l('months') : l('month')})
                     </span>
                     </p>
@@ -73,7 +73,7 @@ export default function ExperienceComponent() {
                         {experiences.map((job: Experience, index: number) => {
                             return (
                                 <div key={index} className={'mt-10'}>
-                                    <p className={'text-2xl md:text-3xl font-bold z-30 w-full top-1/4 lg:mt-5'}
+                                    <p className={'text-2xl md:text-5xl font-bold z-30 w-full top-1/4 mb-8 lg:mt-5 font-vela-sans'}
                                        data-aos="fade-right">{job.company}
                                         <span
                                             className={'text-xl ml-2 md:text-2xl text-gray-400 z-30 w-full top-1/4 lg:mt-5 '}>
@@ -82,7 +82,7 @@ export default function ExperienceComponent() {
                                     </p>
 
 
-                                    <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-6 items-center flex flex-wrap'}
+                                    <p className={'text-lg md:text-4xl/[3.37rem] z-30 w-full mb-16 text-justify top-1/4 mt-6 items-center font-vela-sans flex flex-wrap'}
                                        data-aos="fade-right">
                                         {job.role} -
                                         {job.technologies && job.technologies.length > 0 &&
@@ -98,7 +98,7 @@ export default function ExperienceComponent() {
                                     </p>
 
 
-                                    <p className={'text-lg md:text-2xl z-30 w-full text-justify top-1/4 mt-3'}
+                                    <p className={'text-lg md:text-3xl/[2.8rem] z-30 w-full text-justify top-1/4 mt-3 font-vela-sans'}
                                        data-aos="fade-right">{job.description}</p>
 
                                 </div>
@@ -110,14 +110,22 @@ export default function ExperienceComponent() {
                 </div>
 
             </div>
-            <div className={'bg-green-radial-gradient w-full relative h-auto top-0 pb-2 left-0 z-20'}>
-                <div className={'w-full h-full bg-[#1b1c1e]/50 absolute top-0 left-0 z-10'}/>
+            <div className={'bg-green-radial-gradient w-full relative h-auto top-0 pb-2 left-0 z-30'}>
+                <div className={'w-full h-full bg-[#1b1c1e]/50 absolute top-0 left-0 z-20'}/>
                 <Blobs/>
                 <img src={'/wave-white-footer.svg'}
                      className={'w-full z-10 text-white absolute  bg-none'}/>
                 <img src={'/astronaut.png'}
                      className={'z-10 text-white -ml-32 pt-24 wave-animation h-screen/2  bg-none'}/>
 
+                <div className={'w-full h-screen relative flex items-end'}>
+
+                    <img src='/coral.png' className='w-1/5 z-10 absolute bottom-0 right-0'/>
+                    <img src='/coral2.png' className=' w-1/5 z-10 absolute bottom-0 left-0'/>
+                    <img src='/coral3.png' className=' w-1/5 z-10 absolute bottom-0 left-0'/>
+                    <img src='/coral4.png' className=' w-1/5 z-10 absolute bottom-0 right-0'/>
+                    <img src='/coral5.png' className=' w-1/5 z-10 absolute bottom-0 left-0'/>
+                </div>
 
             </div>
         </div>

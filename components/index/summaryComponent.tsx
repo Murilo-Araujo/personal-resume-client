@@ -15,11 +15,11 @@ function SummaryComponent() {
             <div className='relative top-0 w-full h-full'>
                 <img src="/wave.svg" className="wave-animation bg-black z-10"/>
 
-                <div className="bg-primary w-full h-full z-30">
+                <div className="bg-primary w-full h-full z-30 pt-2 ">
                     <div
-                        className='w-full h-full space-y-12 justify-center items-center text-3xl md:text-6xl text-justify text-white p-6 md:p-32 relative font-bold z-30'>
-                        <p data-aos="fade-right"> {t('paragraph')}</p>
-                        <p data-aos="fade-left"> {t('secondParagraph')}</p>
+                        className='w-full h-full justify-center items-center text-justify p-6 md:p-32 relative font-bold z-30 space-y-32'>
+                        <p data-aos="fade-right" className="text-3xl/[2.8rem] md:text-7xl/[6rem] font-murs-gothic"> {t('firstParagraph')}</p>
+                        <p data-aos="fade-left" className="text-3xl/[2.8rem] md:text-7xl/[6rem] font-murs-gothic"> {t('secondParagraph')}</p>
                     </div>
                 </div>
                 <div className="relative">

@@ -7,6 +7,8 @@ const config: Config = {
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
+
+
         extend: {
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -16,7 +18,8 @@ const config: Config = {
             colors: {
                 'primary': '#a68cc1',
                 'white': '#f5f5f5',
-            }
+            },
+
         },
     },
     plugins: [],

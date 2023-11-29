@@ -46,7 +46,7 @@ function ProjectsComponent(props: ProjectsComponentProps) {
 
             <div
                 className={"justify-center items-center overflow-x-auto h-auto lg:pt-96 py-64 flex-col "}>
-                <h1 className={"text-white text-4xl md:text-6xl font-bold text-center z-30 w-full lg:mt-5"}>{t('title')}</h1>
+                <h1 className={"text-white text-4xl/[3.37rem] md:text-6xl font-bold text-center z-30 w-full lg:mt-5 font-murs-gothic py-32"}>{t('title')}</h1>
                 <Bubbles/>
                 <img src={'/wave-middle.svg'} className={'w-full z-30 wave-animation relative -mb-[1px] text-white'}/>
                 <div className={"relative w-full h-auto z-30 wave-animation"}>

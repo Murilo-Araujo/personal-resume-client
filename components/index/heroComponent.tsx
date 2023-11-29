@@ -8,7 +8,7 @@ function HeroComponent() {
             <div className="w-full h-full flex justify-center items-center absolute">
                 <div className="md:mb-24 md:ml-16 -space-y-4 md:-space-y-6" data-aos="fade-right">
                     <div className="text-white z-50 text-[25px] md:text-[60px]">{t('title')}</div>
-                    <div className="text-white z-50 text-[40px] md:text-[90px] font-extrabold">{t('name')}</div>
+                    <div className="text-white z-50 text-[60px] md:text-[120px] font-extrabold">{t('name')}</div>
                     <div className="text-white z-50 text-[25px] md:text-[60px]">{t('subtitle')}</div>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function ProjectItemComponent({project}: ProjectItemComponentProp
     const {t} = useTranslation('projectItemComponent')
 
     return (
-        <Link href={`/project/${project.id}`} className="h-60 p-6 rounded-lg shadow border-4 border-black my-4 group cursor-pointer -wave_animation hover:shadow-lg w-96 hover:bg-black hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100">
+        <Link href={`/project/${project.id}`} className="h-60 p-6 snap-center rounded-lg shadow border-4 border-black my-4 group cursor-pointer -wave_animation hover:shadow-lg w-96 hover:bg-black hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100">
             <div className="flex justify-center items-center mb-3">
                 <img src={`/icons/${project.language}.png`} className="w-10 h-10"/>
             </div>

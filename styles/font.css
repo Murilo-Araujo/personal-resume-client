@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Murs Gothic';
+    src: url('../fonts/murs-gothic/murs-gothic.otf') format('opentype'),
+    url('../fonts/murs-gothic/murs-gothic.woff') format('woff'),
+    url('../fonts/murs-gothic/murs-gothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vela Sans';
+    src: url('../fonts/vela-sans/VelaSans-Medium.ttf') format('truetype'),
+    url('../fonts/vela-sans/VelaSans-Bold.ttf') format('truetype'),
+    url('../fonts/vela-sans/VelaSans-ExtraBold.ttf') format('truetype'),
+    url('../fonts/vela-sans/VelaSans-Light.ttf') format('truetype'),
+    url('../fonts/vela-sans/VelaSans-Regular.ttf') format('truetype');
+
+}
+
+
+.font-murs-gothic {
+    font-family: 'Murs Gothic', serif;
+}
+
+.font-vela-sans {
+    font-family: 'Vela Sans', emoji;
+}
+
+
+
+
+
+

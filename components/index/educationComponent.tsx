@@ -68,27 +68,28 @@ export default function EducationComponent() {
                     <Blobs/>
 
                 </div>
-                <div className={' relative bg-black z-0'}>
+                <div className={' relative bg-black'}>
                     <img src="/wave-white.svg" className={'wave-animation bg-none'}/>
                     <div className="bg-white w-full h-full z-40">
-                        <div
-                            className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
-                            <p className={'text-4xl md:text-6xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'} data-aos="fade-right">{t('degree')}
-                                <span className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5'}>
-                                    ({t('graduationDate')})
-                                </span>
+                        <div className='w-full h-full justify-center items-center text-justify text-gray-900 p-6 md:p-32  relative font-bold z-30'>
+                            <p className={'text-4xl/[3.37rem] md:text-7xl/[5rem] font-bold text-center z-30 w-full mt-32 font-murs-gothic uppercase'}
+                               data-aos="fade-right">{t('degree')}
+                            </p>
+                            <p className={'text-xl ml-2 md:text-2xl text-gray-400 text-center mb-12 z-30 w-full top-1/4 lg:mt-5 font-vela-sans'}>
+                                ({t('graduationDate')})
                             </p>
 
-                            <p className={'text-2xl md:text-3xl font-bold text-center z-30 w-full top-1/4 lg:mt-5'} data-aos="fade-left">{t('university')}
-                                <span className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5'}>
+                            <p className={'text-2xl md:text-3xl/[2.8rem] font-bold text-center z-30 w-full top-1/4 lg:mt-5 font-vela-sans'}
+                               data-aos="fade-left">{t('university')}
+                                <span
+                                    className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 font-vela-sans'}>
                                     ({t('score')})
                                 </span>
                             </p>
 
 
-
-                            <p className={'text-lg md:text-2xl text-center z-30 w-full text-justify top-1/4 mt-16 lg:mt-32'} data-aos="fade-right">{t('description')}</p>
-
+                            <p className={'text-lg md:text-3xl/[2.8rem] leading-10 text-gray-800 font-vela-sans z-30 w-full text-justify top-1/4 mt-16 lg:mt-32 '}
+                               data-aos="fade-right">{t('description')}</p>
 
 
                         </div>
