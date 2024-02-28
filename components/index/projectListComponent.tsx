@@ -15,21 +15,6 @@ export default function ProjectListComponent({projects}: ProjectListComponentPro
                 {Array.isArray(projects) && projects.map((project: any) => (
                     <ProjectItemComponent key={project.id} project={project}/>
                 ))}
-                {Array.isArray(projects) && projects.map((project: any) => (
-                    <ProjectItemComponent key={project.id} project={project}/>
-                ))}
-                {Array.isArray(projects) && projects.map((project: any) => (
-                    <ProjectItemComponent key={project.id} project={project}/>
-                ))}
-                {Array.isArray(projects) && projects.map((project: any) => (
-                    <ProjectItemComponent key={project.id} project={project}/>
-                ))}
-                {Array.isArray(projects) && projects.map((project: any) => (
-                    <ProjectItemComponent key={project.id} project={project}/>
-                ))}
-                {Array.isArray(projects) && projects.map((project: any) => (
-                    <ProjectItemComponent key={project.id} project={project}/>
-                ))}
 
             </div>
         </div>
