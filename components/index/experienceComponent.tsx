@@ -15,14 +15,14 @@ type Experience = {
 function Blobs() {
     return (
         <>
-            <img src='/blob-white5.svg' className='absolute top-[30%] right-[47%] w-1/5 z-10'/>
-            <img src='/blob-white7.svg' className='absolute top-[40%] left-[0%] w-1/5 z-10'/>
-            <img src='/blob-white8.svg' className='absolute top-[55%] left-[20%] w-1/5 z-10'/>
-            <img src='/blob-white9.svg' className='absolute top-[40%] right-[0%] w-1/5 z-10'/>
-            <img src='/blob-white10.svg' className='absolute top-[45%] left-[50%] w-1/5 z-10'/>
-            <img src='/blob-white11.svg' className='absolute top-[20%] left-[70%] w-1/5 z-10'/>
-            <img src='/blob-animated.svg' className='absolute top-[50%] right-[15%] w-[15%] z-10'/>
-            <img src='/blob-animated2.svg' className='absolute spin top-[70%] left-[45%] w-[10%] z-10'/>
+            <img src='/blob-white5.svg' className='absolute top-[30%] right-[47%] w-1/5 z-20'/>
+            <img src='/blob-white7.svg' className='absolute top-[40%] left-[0%] w-1/5 z-20'/>
+            <img src='/blob-white8.svg' className='absolute top-[55%] left-[20%] w-1/5 z-20'/>
+            <img src='/blob-white9.svg' className='absolute top-[40%] right-[0%] w-1/5 z-20'/>
+            <img src='/blob-white10.svg' className='absolute top-[45%] left-[50%] w-1/5 z-20'/>
+            <img src='/blob-white11.svg' className='absolute top-[20%] left-[70%] w-1/5 z-20'/>
+            <img src='/blob-animated.svg' className='absolute top-[50%] right-[15%] w-[15%] z-20'/>
+            <img src='/blob-animated2.svg' className='absolute spin top-[70%] left-[45%] w-[10%] z-20'/>
         </>
 
     )
@@ -49,7 +49,6 @@ export default function ExperienceComponent() {
     };
 
 
-    // 22/09/2022 to now
     const [years, months, days] = Object.values(calculateDifference(new Date(2022, 8, 1), new Date()));
     const locale = i18n.language === 'pt-BR' ? ptBR : enGB;
 
@@ -111,21 +110,12 @@ export default function ExperienceComponent() {
 
             </div>
             <div className={'bg-green-radial-gradient w-full relative h-auto top-0 pb-2 left-0 z-30'}>
-                <div className={'w-full h-full bg-[#1b1c1e]/50 absolute top-0 left-0 z-20'}/>
                 <Blobs/>
+                <div className={'w-full h-full bg-[#1b1c1e]/50 absolute top-0 left-0 z-10'}/>
                 <img src={'/wave-white-footer.svg'}
-                     className={'w-full z-10 text-white absolute  bg-none'}/>
+                     className={'w-full z-20 text-white absolute  bg-none'}/>
                 <img src={'/astronaut.png'}
                      className={'z-10 text-white -ml-32 pt-24 wave-animation h-screen/2  bg-none'}/>
-
-                <div className={'w-full h-screen relative flex items-end'}>
-
-                    <img src='/coral.png' className='w-1/5 z-10 absolute bottom-0 right-0'/>
-                    <img src='/coral2.png' className=' w-1/5 z-10 absolute bottom-0 left-0'/>
-                    <img src='/coral3.png' className=' w-1/5 z-10 absolute bottom-0 left-0'/>
-                    <img src='/coral4.png' className=' w-1/5 z-10 absolute bottom-0 right-0'/>
-                    <img src='/coral5.png' className=' w-1/5 z-10 absolute bottom-0 left-0'/>
-                </div>
 
             </div>
         </div>

@@ -1,6 +1,5 @@
 import BubbleComponent from "@/components/index/bubbleComponent";
 import {useTranslation} from "react-i18next";
-import {useRouter} from "next/router";
 
 function SummaryComponent() {
 
@@ -18,8 +17,8 @@ function SummaryComponent() {
                 <div className="bg-primary w-full h-full z-30 pt-2 ">
                     <div
                         className='w-full h-full justify-center items-center text-justify p-6 md:p-32 relative font-bold z-30 space-y-32'>
-                        <p data-aos="fade-right" className="text-3xl/[2.8rem] md:text-7xl/[6rem] font-murs-gothic"> {t('firstParagraph')}</p>
-                        <p data-aos="fade-left" className="text-3xl/[2.8rem] md:text-7xl/[6rem] font-murs-gothic"> {t('secondParagraph')}</p>
+                        <p data-aos="fade-right" className="text-3xl/[2.8rem] md:text-6xl/[5.4rem] font-murs-gothic"> {t('firstParagraph')}</p>
+                        <p data-aos="fade-left" className="text-3xl/[2.8rem] md:text-6xl/[5.4rem] font-murs-gothic"> {t('secondParagraph')}</p>
                     </div>
                 </div>
                 <div className="relative">
