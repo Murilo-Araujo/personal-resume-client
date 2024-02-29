@@ -10,7 +10,7 @@ export default function Contact() {
     return (
         <div className="flex flex-col justify-center items-center h-screen bg-black text-white relative">
             <img src={'/speed-line.svg'} alt={'speed-line'}
-                 className={'absolute top-0 left-0 z-10 w-auto h-screen'}/>
+                 className={' top-0 left-0 z-10 w-auto h-screen w-full'}/>
 
             <div
                 className=" absolute w-2/3 md:w-1/2 min-h-[50%] grid grid-cols-1 md:grid-cols-3 rounded-3xl bg-white z-20">
