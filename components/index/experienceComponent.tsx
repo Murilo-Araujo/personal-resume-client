@@ -68,11 +68,11 @@ export default function ExperienceComponent() {
                     </span>
                     </p>
 
-                    <div className={'flex flex-col mt-16 lg:mt-32 items-center'}>
+                    <div className={'flex flex-col mt-16 lg:mt-32 items-center space-y-44'}>
                         {experiences.map((job: Experience, index: number) => {
                             return (
                                 <div key={index} className={'mt-10'}>
-                                    <p className={'text-2xl md:text-5xl font-bold z-30 w-full top-1/4 mb-8 lg:mt-5 font-vela-sans'}
+                                    <p className={'text-2xl md:text-5xl font-bold z-30 w-full top-1/4 lg:mt-5 font-vela-sans'}
                                        data-aos="fade-right">{job.company}
                                         <span
                                             className={'text-xl ml-2 md:text-2xl text-gray-400 z-30 w-full top-1/4 lg:mt-5 '}>

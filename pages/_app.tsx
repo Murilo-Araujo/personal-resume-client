@@ -15,12 +15,12 @@ export default function App({Component, pageProps}: AppProps) {
 
     useEffect(() => {
         AOS.init({
-            disable: 'mobile',
+            // disable: 'mobile',
             duration: 1000,
             once: true,
         });
 
-    }, [locale]);
+    }, []);
 
     i18n.use(initReactI18next)
         .init({
@@ -34,8 +34,10 @@ export default function App({Component, pageProps}: AppProps) {
 
     return (
         <>
-            <HeaderComponent/>
-            <Component {...pageProps} />
+            <div className="overflow-hidden">
+                <HeaderComponent/>
+                <Component {...pageProps} />
+            </div>
         </>
 
     )

@@ -18,6 +18,23 @@
           "GitHub",
           "Code review"
         ]
+      },
+      {
+        "company": "Procfy",
+        "role": "Full Stack Developer",
+        "startDate": "2021-10-01",
+        "description": "During this period, I actively contributed to the development of innovative solutions in challenging projects. Working collaboratively, I adhered to the best programming practices, enhancing not only my technical skills but also my ability for effective communication and collaboration. This experience not only provided me with the opportunity to learn new technologies and methodologies but also to share this knowledge.",
+        "technologies": [
+          "Ruby",
+          "Ruby on Rails",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Git",
+          "GitHub",
+          "Code review"
+        ]
       }
     ]
   }

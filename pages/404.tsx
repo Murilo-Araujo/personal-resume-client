@@ -5,7 +5,7 @@ function Error404() {
 
         <>
             <img src={'/not_found_wave.svg'} alt={'error'}
-                 className={'absolute top-0 left-0 w-full h-screen'}/>
+                 className={'absolute h-screen flex items-end'}/>
             <div className="text-center absolute flex flex-col space-y-4 justify-center items-center w-full h-full">
                 <h1 className="text-6xl font-extrabold font-vela-sans text-white">Oops! Page not found</h1>
                 <h1 className="text-6xl font-extrabold font-vela-sans text-white ">404</h1>
