@@ -71,7 +71,8 @@ export default function EducationComponent() {
                 <div className={' relative bg-black'}>
                     <img src="/wave-white.svg" className={'wave-animation bg-none'}/>
                     <div className="bg-white w-full h-full z-40">
-                        <div className='w-full h-full justify-center items-center text-justify text-gray-900 p-6 md:p-32  relative font-bold z-30'>
+                        <div
+                            className='w-full h-full justify-center items-center text-justify text-gray-900 p-6 md:p-32  relative font-bold z-30'>
                             <p className={'text-4xl/[3.37rem] md:text-7xl/[5rem] font-bold text-center z-30 w-full mt-32 font-murs-gothic uppercase'}
                                data-aos="fade-right">{t('degree')}
                             </p>
@@ -89,7 +90,7 @@ export default function EducationComponent() {
 
 
                             <p className={'text-lg md:text-3xl/[2.8rem] leading-10 text-gray-800 font-vela-sans z-30 w-full text-justify top-1/4 mt-16 lg:mt-32 '}
-                               data-aos="fade-right">{t('description')}</p>
+                               data-aos="fade-right" dangerouslySetInnerHTML={{__html: t('description')}}/>
 
 
                         </div>

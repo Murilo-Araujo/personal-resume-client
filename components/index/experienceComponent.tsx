@@ -60,10 +60,10 @@ export default function ExperienceComponent() {
             <div className="bg-white w-full h-full z-40 pt-32">
                 <div
                     className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
-                    <p className={'text-4xl/[3.37rem] md:text-7xl font-bold text-center z-30 w-full top-1/4 lg:mt-5 font-murs-gothic leading-[5rem]'}
+                    <p className={'text-4xl/[3.37rem] md:text-7xl font-bold text-center z-30 w-full top-1/4 lg:mt-5 font-murs-gothic'}
                        data-aos="fade-left uppercase">{t('title')}
                         <span
-                            className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 lg:mt-5 font-vela-sans'}>
+                            className={'text-xl ml-2 md:text-2xl text-gray-400 text-center z-30 w-full top-1/4 whitespace-nowrap lg:mt-5 font-vela-sans'}>
                        ({years} {years > 1 ? l('years') : l('year')} {l('and')} {months} {months > 1 ? l('months') : l('month')})
                     </span>
                     </p>
@@ -96,9 +96,11 @@ export default function ExperienceComponent() {
                                         }
                                     </p>
 
+                                    <div className={'text-lg md:text-3xl/[2.8rem] z-30 w-full text-justify top-1/4 mt-6 font-vela-sans'}
+                                         data-aos="fade-right">
+                                        <div dangerouslySetInnerHTML={{__html: job.description}}/>
 
-                                    <p className={'text-lg md:text-3xl/[2.8rem] z-30 w-full text-justify top-1/4 mt-3 font-vela-sans'}
-                                       data-aos="fade-right">{job.description}</p>
+                                    </div>
 
                                 </div>
                             )

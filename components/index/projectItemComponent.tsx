@@ -20,17 +20,17 @@ export default function ProjectItemComponent({project}: ProjectItemComponentProp
                 <img src={`/icons/${project.language}.png`} className="w-10 h-10"/>
             </div>
 
-            <div className="flex items-center">
-                {t('difficulty')}
+            {/*<div className="flex items-center">*/}
+            {/*    {t('difficulty')}*/}
 
-                <div className="flex ml-2">
-                    <StarIcon className="w-5 h-5 text-yellow-400"/>
-                    <StarIcon className="w-5 h-5 text-yellow-400"/>
-                    <StarIcon className="w-5 h-5 text-yellow-400"/>
-                    <StarIcon className="w-5 h-5 text-yellow-400"/>
-                    <StarIcon className="w-5 h-5 text-yellow-400"/>
-                </div>
-            </div>
+            {/*    <div className="flex ml-2">*/}
+            {/*        <StarIcon className="w-5 h-5 text-yellow-400"/>*/}
+            {/*        <StarIcon className="w-5 h-5 text-yellow-400"/>*/}
+            {/*        <StarIcon className="w-5 h-5 text-yellow-400"/>*/}
+            {/*        <StarIcon className="w-5 h-5 text-yellow-400"/>*/}
+            {/*        <StarIcon className="w-5 h-5 text-yellow-400"/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
 
             <div className="flex">

@@ -6,14 +6,16 @@
         "company": "Codengage",
         "role": "Full Stack Developer",
         "startDate": "2022-09-01",
-        "description": "During this period, I actively contributed to the development of innovative solutions in challenging projects. Working collaboratively, I adhered to the best programming practices, enhancing not only my technical skills but also my ability for effective communication and collaboration. This experience not only provided me with the opportunity to learn new technologies and methodologies but also to share this knowledge.",
+        "description": "At Codengage, I developed and implemented efficient solutions for complex projects using technologies such as JavaScript (Node.js), Ruby on Rails, and Tailwind. I collaborated closely with team members to ensure adherence to best programming practices, which resulted in improved project outcomes.</br></br> This role significantly enhanced my technical skills, communication, and teamwork abilities through active participation in agile development methodologies. I also had the opportunity to lead projects and manage client communications, further developing my project management skills.",
         "technologies": [
+          "JavaScript",
+          "Node.js",
           "Ruby",
           "Ruby on Rails",
+          "Tailwind",
           "PostgreSQL",
           "HTML",
           "CSS",
-          "JavaScript",
           "Git",
           "GitHub",
           "Code review"

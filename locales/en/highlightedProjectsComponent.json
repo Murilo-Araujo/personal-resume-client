@@ -1,0 +1,79 @@
+{
+  "highlightedProjectsComponent": {
+    "highlightedProjects": [
+      {
+        "project": "Procfy",
+        "url": "https://app.procfy.io",
+        "description": "Procfy is a financial system designed to simplify financial management for small and medium-sized businesses. With over 5,000 users, this project aims to streamline financial administration for enterprises.",
+        "technologiesUsed": [
+          "Rails 7",
+          "Stimulus",
+          "Turbo Frame",
+          "HTML",
+          "HAML",
+          "TailwindCSS",
+          "Docker",
+          "Hotwire",
+          "Redis",
+          "PostgreSQL"
+        ],
+        "myContributions": [
+          "Responsible for reviewing all code going to the develop branch and performing deployments.",
+          "Conducted audits of automated tests, ensuring code quality.",
+          "Developed a text editor in JavaScript that compiles into HTML and generates PDFs, handling node splitting to avoid overflow.",
+          "Contributed to the creation of almost all system screens.",
+          "Created the entire graphing system that displays the financial movements of the companies."
+        ],
+        "elementsToObserve": [
+          "Text editor with HTML compilation and PDF generation.",
+          "Interactive graphs displaying financial movements.",
+          "Intuitive navigation and clean design."
+        ],
+        "impactAndResults": [
+          "The text editor took about a month to finalize and provided significant learning opportunities.",
+          "The system serves over 5,000 users, providing an effective tool for business financial management."
+        ]
+      },
+      {
+        "project": "Online Resume",
+        "url": "https://murilo-marcal.vercel.app/",
+        "description": "This is a personal project where I developed my online resume, learning and implementing Next.js.",
+        "technologiesUsed": [
+          "Next.js",
+          "TailwindCSS"
+        ],
+        "myContributions": [
+          "Developed the locales and static rendering.",
+          "Used TailwindCSS for styling and Next.js for rendering."
+        ],
+        "elementsToObserve": [
+          "Static and dynamic rendering.",
+          "Responsive and optimized design."
+        ],
+        "impactAndResults": [
+          "A personal project demonstrating my skills in Next.js and TailwindCSS."
+        ]
+      },
+      {
+        "project": "Yogomarcas (in development)",
+        "url": "https://yogomarcas.onrender.com",
+        "description": "Developing a website with a blog for a client, focusing on SEO optimization and client acquisition.",
+        "technologiesUsed": [
+          "TailwindCSS",
+          "SEO"
+        ],
+        "myContributions": [
+          "Structured imperative designs with effective CTAs and SEO for optimized keywords.",
+          "Developed conversion funnels to optimize client acquisition."
+        ],
+        "elementsToObserve": [
+          "SEO structure and conversion funnels.",
+          "Responsive design focused on CTAs."
+        ],
+        "impactAndResults": [
+          "The project is in development but already demonstrates good SEO and design practices."
+        ]
+      }
+    ]
+  }
+}
