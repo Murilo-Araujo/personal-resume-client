@@ -1,4 +1,4 @@
-export default function HighlightedProjectsComponent() {
+export default function HighlightedProjectComponent() {
     return (
         <>
         </>

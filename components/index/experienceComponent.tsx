@@ -12,22 +12,6 @@ type Experience = {
     description: string;
 };
 
-function Blobs() {
-    return (
-        <>
-            <img src='/blob-white5.svg' className='absolute top-[30%] right-[47%] w-1/5 z-20'/>
-            <img src='/blob-white7.svg' className='absolute top-[40%] left-[0%] w-1/5 z-20'/>
-            <img src='/blob-white8.svg' className='absolute top-[55%] left-[20%] w-1/5 z-20'/>
-            <img src='/blob-white9.svg' className='absolute top-[40%] right-[0%] w-1/5 z-20'/>
-            <img src='/blob-white10.svg' className='absolute top-[45%] left-[50%] w-1/5 z-20'/>
-            <img src='/blob-white11.svg' className='absolute top-[20%] left-[70%] w-1/5 z-20'/>
-            <img src='/blob-animated.svg' className='absolute top-[50%] right-[15%] w-[15%] z-20'/>
-            <img src='/blob-animated2.svg' className='absolute spin top-[70%] left-[45%] w-[10%] z-20'/>
-        </>
-
-    )
-}
-
 export default function ExperienceComponent() {
     const {t} = useTranslation('experienceComponent');
     const {t: l} = useTranslation('shared');
@@ -56,7 +40,7 @@ export default function ExperienceComponent() {
 
 
     return (
-        <div className={'relative bg-black pb-6'}>
+
             <div className="bg-white w-full h-full z-40 pt-32">
                 <div
                     className='w-full h-full justify-center items-center text-justify text-gray-900 spa p-6 md:p-32 relative font-bold z-30'>
@@ -111,15 +95,5 @@ export default function ExperienceComponent() {
                 </div>
 
             </div>
-            <div className={'bg-green-radial-gradient w-full relative h-auto top-0 pb-2 left-0 z-30'}>
-                <Blobs/>
-                <div className={'w-full h-full bg-[#1b1c1e]/50 absolute top-0 left-0 z-10'}/>
-                <img src={'/wave-white-footer.svg'}
-                     className={'w-full z-20 text-white absolute  bg-none'}/>
-                <img src={'/astronaut.png'}
-                     className={'z-10 text-white -ml-32 pt-24 wave-animation h-screen/2  bg-none'}/>
-
-            </div>
-        </div>
     )
 }

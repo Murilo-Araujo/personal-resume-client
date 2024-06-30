@@ -1,45 +1,15 @@
 {
   "highlightedProjectsComponent": {
+    "title": "Highlighted Projects",
+    "seeLiveProject": "See the live website",
     "highlightedProjects": [
-      {
-        "project": "Procfy",
-        "url": "https://app.procfy.io",
-        "description": "Procfy is a financial system designed to simplify financial management for small and medium-sized businesses. With over 5,000 users, this project aims to streamline financial administration for enterprises.",
-        "technologiesUsed": [
-          "Rails 7",
-          "Stimulus",
-          "Turbo Frame",
-          "HTML",
-          "HAML",
-          "TailwindCSS",
-          "Docker",
-          "Hotwire",
-          "Redis",
-          "PostgreSQL"
-        ],
-        "myContributions": [
-          "Responsible for reviewing all code going to the develop branch and performing deployments.",
-          "Conducted audits of automated tests, ensuring code quality.",
-          "Developed a text editor in JavaScript that compiles into HTML and generates PDFs, handling node splitting to avoid overflow.",
-          "Contributed to the creation of almost all system screens.",
-          "Created the entire graphing system that displays the financial movements of the companies."
-        ],
-        "elementsToObserve": [
-          "Text editor with HTML compilation and PDF generation.",
-          "Interactive graphs displaying financial movements.",
-          "Intuitive navigation and clean design."
-        ],
-        "impactAndResults": [
-          "The text editor took about a month to finalize and provided significant learning opportunities.",
-          "The system serves over 5,000 users, providing an effective tool for business financial management."
-        ]
-      },
       {
         "project": "Online Resume",
         "url": "https://murilo-marcal.vercel.app/",
-        "description": "This is a personal project where I developed my online resume, learning and implementing Next.js.",
+        "description": "This is a personal project where I developed my online resume, learning and implementing Next.js. The goal of this project was to create a fully functional, aesthetically pleasing, and highly optimized online resume that showcases my technical skills and personal achievements. I wanted to build a site that not only looks great but also performs exceptionally well across various devices and screen sizes.<br/><br/> Throughout this project, I focused on creating a seamless user experience by implementing best practices in responsive design, accessibility, and performance optimization. I utilized Next.js for its powerful static and dynamic rendering capabilities, which allowed me to deliver content efficiently and enhance the site's performance. TailwindCSS was used for styling due to its flexibility and ease of use, enabling me to maintain a clean and consistent design. Additionally, I incorporated SEO strategies to improve the site's visibility on search engines, ensuring that my resume reaches a wider audience.<br/><br/> This project reflects my ability to handle the entire web development process, from concept and design to implementation and optimization, and demonstrates my commitment to creating high-quality web applications.",
+        "image": "/online-resume.png",
         "technologiesUsed": [
-          "Next.js",
+          "NextJs",
           "TailwindCSS"
         ],
         "myContributions": [
@@ -57,10 +27,14 @@
       {
         "project": "Yogomarcas (in development)",
         "url": "https://yogomarcas.onrender.com",
-        "description": "Developing a website with a blog for a client, focusing on SEO optimization and client acquisition.",
+        "image": "/yogomarcas.png",
+        "description": "Developing a comprehensive website with a blog for a client, focusing on SEO optimization and client acquisition. This project aims to significantly enhance the client's online presence and attract potential customers through strategically structured content and effective conversion funnels. The primary objective is to create a robust digital platform that not only showcases the client's products and services but also engages visitors and converts them into loyal customers. The website is being developed with a keen focus on SEO best practices, including keyword optimization, meta tags, and high-quality content to ensure high search engine rankings and increased organic traffic.<br/><br/> TailwindCSS is used to design a visually appealing and user-friendly interface, ensuring a seamless and enjoyable user experience across all devices. Additionally, I am developing conversion funnels to guide visitors through the website, encouraging them to take specific actions such as signing up for newsletters, filling out contact forms, or making purchases. These funnels are strategically placed and designed to maximize the client's ROI by turning visitors into leads or customers.<br/><br/> This project also involves creating detailed analytics and reporting systems to track user behavior and website performance, providing valuable insights for continuous improvement. Although still in development, the project already demonstrates excellent SEO and design practices, showing great potential for significant improvements in client acquisition and online visibility once completed.<br/><br/> This project exemplifies my ability to work on complex web development tasks, focusing on both the technical and strategic aspects to deliver a comprehensive and effective online solution for the client.",
         "technologiesUsed": [
           "TailwindCSS",
-          "SEO"
+          "RubyOnRails",
+          "Hotwired",
+          "Ruby",
+          "HTML"
         ],
         "myContributions": [
           "Structured imperative designs with effective CTAs and SEO for optimized keywords.",

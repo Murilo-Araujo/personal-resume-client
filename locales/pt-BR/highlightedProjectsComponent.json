@@ -1,0 +1,53 @@
+{
+  "highlightedProjectsComponent": {
+    "title": "Projetos em Destaque",
+    "seeLiveProject": "Veja o site ao vivo",
+    "highlightedProjects": [
+      {
+        "project": "Currículo Online",
+        "url": "https://murilo-marcal.vercel.app/",
+        "description": "Este é um projeto pessoal onde desenvolvi meu currículo online, aprendendo e implementando Next.js. O objetivo deste projeto foi criar um currículo online totalmente funcional, esteticamente agradável e altamente otimizado, que mostrasse minhas habilidades técnicas e realizações pessoais. Queria construir um site que não apenas tivesse uma ótima aparência, mas também tivesse um desempenho excepcional em vários dispositivos e tamanhos de tela.<br/><br/> Ao longo deste projeto, foquei em criar uma experiência de usuário perfeita, implementando as melhores práticas em design responsivo, acessibilidade e otimização de desempenho. Utilizei Next.js por suas poderosas capacidades de renderização estática e dinâmica, o que me permitiu entregar conteúdo de forma eficiente e melhorar o desempenho do site. TailwindCSS foi usado para estilização devido à sua flexibilidade e facilidade de uso, permitindo-me manter um design limpo e consistente. Além disso, incorporei estratégias de SEO para melhorar a visibilidade do site nos motores de busca, garantindo que meu currículo alcançasse um público mais amplo.<br/><br/> Este projeto reflete minha capacidade de lidar com todo o processo de desenvolvimento web, desde o conceito e design até a implementação e otimização, e demonstra meu compromisso em criar aplicações web de alta qualidade.",
+        "image": "/online-resume.png",
+        "technologiesUsed": [
+          "NextJs",
+          "TailwindCSS"
+        ],
+        "myContributions": [
+          "Desenvolvi as localizações e a renderização estática.",
+          "Usei TailwindCSS para estilização e Next.js para renderização."
+        ],
+        "elementsToObserve": [
+          "Renderização estática e dinâmica.",
+          "Design responsivo e otimizado."
+        ],
+        "impactAndResults": [
+          "Um projeto pessoal demonstrando minhas habilidades em Next.js e TailwindCSS."
+        ]
+      },
+      {
+        "project": "Yogomarcas (em desenvolvimento)",
+        "url": "https://yogomarcas.onrender.com",
+        "image": "/yogomarcas.png",
+        "description": "Desenvolvendo um site abrangente com um blog para um cliente, focando na otimização de SEO e aquisição de clientes. Este projeto visa melhorar significativamente a presença online do cliente e atrair potenciais clientes através de conteúdo estrategicamente estruturado e funis de conversão eficazes. O objetivo principal é criar uma plataforma digital robusta que não apenas apresente os produtos e serviços do cliente, mas também engaje os visitantes e os converta em clientes fiéis. O site está sendo desenvolvido com um foco aguçado nas melhores práticas de SEO, incluindo otimização de palavras-chave, meta tags e conteúdo de alta qualidade para garantir altos rankings nos motores de busca e aumento do tráfego orgânico.<br/><br/> TailwindCSS é usado para projetar uma interface visualmente atraente e amigável, garantindo uma experiência de usuário contínua e agradável em todos os dispositivos. Além disso, estou desenvolvendo funis de conversão para guiar os visitantes pelo site, incentivando-os a tomar ações específicas, como se inscrever em newsletters, preencher formulários de contato ou fazer compras. Esses funis são estrategicamente posicionados e projetados para maximizar o ROI do cliente, transformando visitantes em leads ou clientes.<br/><br/> Este projeto também envolve a criação de sistemas detalhados de análise e relatórios para rastrear o comportamento do usuário e o desempenho do site, fornecendo insights valiosos para melhorias contínuas. Embora ainda esteja em desenvolvimento, o projeto já demonstra excelentes práticas de SEO e design, mostrando grande potencial para melhorias significativas na aquisição de clientes e visibilidade online uma vez concluído.<br/><br/> Este projeto exemplifica minha capacidade de trabalhar em tarefas complexas de desenvolvimento web, focando tanto nos aspectos técnicos quanto estratégicos para entregar uma solução online abrangente e eficaz para o cliente.",
+        "technologiesUsed": [
+          "TailwindCSS",
+          "RubyOnRails",
+          "Hotwired",
+          "Ruby",
+          "HTML"
+        ],
+        "myContributions": [
+          "Estruturei designs imperativos com CTAs eficazes e SEO para palavras-chave otimizadas.",
+          "Desenvolvi funis de conversão para otimizar a aquisição de clientes."
+        ],
+        "elementsToObserve": [
+          "Estrutura de SEO e funis de conversão.",
+          "Design responsivo focado em CTAs."
+        ],
+        "impactAndResults": [
+          "O projeto está em desenvolvimento, mas já demonstra boas práticas de SEO e design."
+        ]
+      }
+    ]
+  }
+}
