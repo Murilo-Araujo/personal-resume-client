@@ -36,7 +36,7 @@ export default function ExperienceComponent() {
     const [years, months, days] = Object.values(calculateDifference(new Date(2022, 8, 1), new Date()));
     const locale = i18n.language === 'pt-BR' ? ptBR : enGB;
 
-    const experiences: Experience[] = t('experiences', {returnObjects: true})
+    const experiences = t('experiences', { returnObjects: true }) as Experience[];
 
 
     return (
